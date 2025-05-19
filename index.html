@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Выставка Pin-Up Арта в Алматы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Посетите уникальную выставку Pin-Up Арта в Алматы! Погрузитесь в мир ярких образов, элегантности и искусства золотой эпохи.">
+    <meta name="keywords" content="Pin-Up, Выставка, Искусство, Алматы, Музей, Арт, Pin-Up Art">
+    <meta name="author" content="Pin-Up Art Exhibition">
+    <meta property="og:title" content="Выставка Pin-Up Арта в Алматы">
+    <meta property="og:description" content="Незабываемая атмосфера, культовые работы и современные интерпретации искусства Pin-Up. Предрегистрация уже открыта!">
+    <meta property="og:image" content="images/pinup-cover.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<div class="wrapper">
+
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">🎨 Pin-Up Art</a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="home-link" href="#about">О выставке</a></li>
+                    <li><a class="home-link" href="#pricing">Цены</a></li>
+                    <li><a class="home-link" href="#features">Особенности</a></li>
+                    <li><a class="home-link" href="#highlights">Основные моменты</a></li>
+                    <li><a class="home-link" href="#faq">FAQ</a></li>
+                    <li><a class="home-link" href="#registration">Контакты</a></li>
+
+
+                </ul>
+            </nav>
+
+            <button class="btn-callback desktop-btn" id="openCallback">Заказать звонок</button>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#about">О выставке</a></li>
+            <li><a href="#pricing">Цены</a></li>
+            <li><a href="#features">Особенности</a></li>
+            <li><a href="#highlights">Основные моменты</a></li>
+
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#registration">Контакты</a></li>
+        </ul>
+        <button class="btn-callback" id="openCallbackMobile">📞 Заказать звонок</button>
+    </div>
+
+    <!-- Модалка для обратного звонка -->
+    <div class="modal" id="callbackModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Заказать звонок</h3>
+            <p>Оставьте свои данные, и мы свяжемся с вами в ближайшее время!</p>
+            <form class="callback-form">
+                <input type="text" placeholder="Ваше имя" required/>
+                <input type="tel" placeholder="Ваш телефон" required/>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <main class="main">
+
+
+<!--        <section id="hero" class="hero">-->
+<!--            <div class="hero-content">-->
+<!--                <h1>Выставка Pin-Up Арта в Алматы</h1>-->
+<!--                <p>Откройте для себя мир ярких и соблазнительных образов!</p>-->
+<!--                <span>Музей Pin-Up Арта с гордостью представляет уникальную выставку, посвящённую культовому направлению в искусстве — Pin-Up Арт. С 15 июня в Алматы стартует совершенно новая выставка, где зрители смогут увидеть работы, вдохновленные золотыми годами американского и европейского искусства 1940-1960-х годов, когда каждая иллюстрация, каждый образ был пронизан духом элегантности и игривой сексуальности.</span>-->
+<!--                <a href="#registration" class="btn">Предрегистрация</a>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section id="hero" class="hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/video/pinup-background..mp4" type="video/mp4">
+                Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1>Выставка Pin-Up Арта в Алматы</h1>
+                <p>Откройте для себя мир ярких и соблазнительных образов!</p>
+                <span>
+            Музей Pin-Up Арта приглашает вас на уникальную выставку, посвящённую культовому направлению в искусстве — Pin-Up Арт.
+            С 15 июня в Алматы стартует новая экспозиция, где вы сможете увидеть работы, вдохновлённые золотыми годами американского и европейского искусства 1940-1960-х годов.
+            Погрузитесь в атмосферу элегантности, игривой сексуальности и творческой свободы.
+        </span>
+                <ul class="hero-features">
+                    <li>📅 Дата: 15 июня – 30 августа 2025</li>
+                    <li>📍 Место: Музей Pin-Up Арта, Алматы</li>
+                    <li>🎟️ Уникальные экспозиции и мультимедийные шоу</li>
+                    <li>📸 Специальные фотозоны для стильных снимков</li>
+                </ul>
+                <a href="#registration" class="btn">Предрегистрация</a>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Что такое Pin-Up Арт?</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+
+                            <strong>Pin-Up</strong> — это стиль в искусстве и культуре, возникший в середине XX века,
+                            отличающийся
+                            изображениями женской красоты, шарма и харизмы. Это искусство подчёркивает женственность в
+                            ярких, часто игривых и соблазнительных образах, которые были популярны в журналах, на
+                            календарях, в рекламных кампаниях и, конечно, в кино.
+                        </p>
+                        <p>
+                            Выставка познакомит посетителей с разнообразием форм Pin-Up искусства: от ретро-плакатов и
+                            винтажных иллюстраций до современных интерпретаций этого стиля, где традиционные образцы
+                            смешиваются с современными визуальными решениями
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://img.freepik.com/premium-photo/munich-germany-december-17-2023-pinakothek-is-famous-museum-munich-bavaria-germany_537997-2928.jpg?ga=GA1.1.1584736296.1744446615&semt=ais_hybrid&w=740"
+                             alt="Pin-Up Girl"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Что вас ждёт на выставке?</h2>
+                <div class="features-list">
+                    <div class="feature-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Классика"/>
+                        <h3>Классические и современные работы</h3>
+                        <p>Работы мастеров золотого века и современных художников в стиле Pin-Up.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3616/3616772.png" alt="Мультимедиа"/>
+                        <h3>Мультимедийные инсталляции</h3>
+                        <p>Графика, анимации, фотографии и видео — искусство оживает на ваших глазах.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Интерактив"/>
+                        <h3>Интерактивные зоны</h3>
+                        <p>Уникальные фото-зоны, где вы сможете стать частью истории и сделать стильные фото.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="Modal Image"/>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+        <section id="highlights" class="highlights">
+            <div class="container">
+                <h2>Особенности выставки</h2>
+                <div class="highlights-list">
+                    <div class="highlight-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2983/2983786.png" alt="Экскурсии"/>
+                        <h3>Тематические экскурсии</h3>
+                        <p>Узнайте, как Pin-Up искусство повлияло на поп-культуру, кино и моду.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721120.png" alt="Мастер-классы"/>
+                        <h3>Мастер-классы и лекции</h3>
+                        <p>Углубите знания на специальных лекциях и мастер-классах от экспертов.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/711/711769.png" alt="Сувениры"/>
+                        <h3>Магазин сувениров</h3>
+                        <p>Приобретите уникальные постеры, книги и эксклюзивные предметы в стиле Pin-Up.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="why-visit">
+            <div class="container">
+                <h2>Почему стоит посетить?</h2>
+                <p class="intro">
+                    Выставка Pin-Up Арта — это не просто встреча с историей искусства.
+                    Это возможность вернуться в эпоху, когда яркие, смелые и сексуальные образы были символом свободы,
+                    уверенности и индивидуальности.
+                    Откройте для себя творчество, которое вдохновляет и продолжает волновать зрителей по всему миру.
+                </p>
+
+                <p class="event-details">
+                    📅 <strong>Дата открытия:</strong> 15 июня 2025 года<br/>
+                    📍 <strong>Место проведения:</strong> Музей Pin-Up Арта, Алматы
+                </p>
+
+                <p class="final-call">
+                    Не упустите шанс стать частью этого культурного события!<br/>
+                    Приглашаем вас на уникальную выставку, которая не оставит вас равнодушными!
+                </p>
+
+                <a href="#registration" class="btn">Зарегистрироваться на выставку</a>
+            </div>
+        </section>
+
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            🎟️ Нужно ли покупать билеты заранее?
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Рекомендуем оформить предрегистрацию — это даст вам бонусы и возможность получить памятные
+                            сувениры. Вход на выставку свободный.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            📅 Сколько длится выставка?
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Выставка открыта с 15 июня по 30 августа 2025 года. Вы можете посетить её в любой удобный
+                            день в часы работы музея.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            📸 Можно ли делать фотографии?
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Конечно! У нас оборудованы специальные фото-зоны. Делайте яркие снимки и делитесь в
+                            социальных сетях!
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            🛍️ Будет ли магазин сувениров?
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Да! Вы сможете приобрести эксклюзивные постеры, книги и уникальные предметы в стиле Pin-Up.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="digital-art">
+            <div class="container">
+                <h2>Мультимедийные Инсталляции и Цифровое Искусство</h2>
+                <p class="intro">
+                    Откройте для себя, как классический стиль Pin-Up оживает в современном цифровом пространстве.
+                    Уникальные мультимедийные инсталляции подарят вам незабываемый визуальный опыт, где
+                    ретро-вдохновение
+                    встречается с технологиями XXI века.
+                </p>
+
+                <div class="art-gallery">
+                    <div class="art-item">
+                        <img src="https://img.freepik.com/premium-photo/minimal-back-view-portrait-young-woman-looking-paintings-modern-art-gallery-copy-space_236854-31812.jpg?ga=GA1.1.1584736296.1744446615&semt=ais_hybrid&w=740"
+                             alt="Инсталляция 1"/>
+                        <h3>Голографические Шоу</h3>
+                        <p>Погрузитесь в мир 3D-голограмм с культовыми образами Pin-Up, оживающими прямо перед вашими
+                            глазами.</p>
+                    </div>
+                    <div class="art-item">
+                        <img src="https://img.freepik.com/premium-photo/sculpture-has-unique-design-is-surrounded-by-paintings_885831-15102.jpg?ga=GA1.1.1584736296.1744446615&semt=ais_hybrid&w=740"
+                             alt="Инсталляция 2"/>
+                        <h3>Интерактивные Экраны</h3>
+                        <p>Участвуйте в создании цифровых арт-образов. Создайте собственный Pin-Up постер прямо на
+                            выставке!</p>
+                    </div>
+                    <div class="art-item">
+                        <img src="https://img.freepik.com/premium-photo/young-blond-woman-talking-mature-elegant-man-art-gallery_274679-32228.jpg?ga=GA1.1.1584736296.1744446615&semt=ais_hybrid&w=740"
+                             alt="Инсталляция 3"/>
+                        <h3>Иммерсивные Залы</h3>
+                        <p>Ощутите полное погружение в искусство благодаря современным VR и AR-технологиям.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration" id="registration">
+            <div class="container">
+                <h2>Предрегистрация на выставку</h2>
+                <p>Оставьте свои данные, и мы свяжемся с вами, чтобы рассказать о новостях и приятных бонусах для
+                    посетителей!</p>
+                <form action="mailto:info@pinupart-almaty.com" method="POST" enctype="text/plain" class="reg-form">
+                    <input type="text" name="Имя" placeholder="Ваше имя" required/>
+                    <input type="email" name="Email" placeholder="Ваш email" required/>
+                    <input type="tel" name="Телефон" placeholder="Ваш телефон" required/>
+                    <textarea name="Комментарий" placeholder="Ваш комментарий (необязательно)"></textarea>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+
+                <div class="contacts">
+                    <h3>Контакты</h3>
+                    <p><strong>📍 Адрес:</strong> Музей Pin-Up Арта, Алматы</p>
+                    <p><strong>📞 Телефон:</strong> <a href="tel:+772700204525">+7 (727) 020-45-25</a></p>
+                    <p><strong>📧 Email:</strong> <a href="mailto:info@pinupart-almaty.com">info@pinupart-almaty.com</a>
+                    </p>
+
+                    <div class="socials">
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"/>
+                        </a>
+                        <a href="https://t.me/+772700204525" target="_blank" title="Telegram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2>Выберите подходящий билет</h2>
+                <p class="pricing-intro">
+                    Посещение выставки доступно для всех желающих!
+                    Но для ценителей искусства и тех, кто хочет получить больше — мы подготовили специальные пакеты с
+                    бонусами.
+                </p>
+
+                <div class="pricing-cards">
+                    <!-- Бесплатный пакет -->
+                    <div class="pricing-card">
+                        <h3>Бесплатный</h3>
+                        <p class="price">0 ₽</p>
+                        <ul>
+                            <li>🎟️ Свободный вход</li>
+                            <li>📸 Фото-зоны</li>
+                            <li>📅 Посещение в любое время</li>
+                            <li>🚫 Без дополнительных бонусов</li>
+                        </ul>
+                        <a href="#registration" class="btn">Зарегистрироваться</a>
+                    </div>
+
+                    <!-- Стандартный пакет -->
+                    <div class="pricing-card featured">
+                        <h3>Стандарт</h3>
+                        <p class="price">1 500 ₽</p>
+                        <ul>
+                            <li>🎁 Подарочный сувенир</li>
+                            <li>📚 Участие в лекциях и мастер-классах</li>
+                            <li>📸 Фото-зоны и профессиональная фотосессия</li>
+                            <li>🍷 Welcome drink</li>
+                        </ul>
+                        <a href="#registration" class="btn">Выбрать пакет</a>
+                    </div>
+
+                    <!-- VIP пакет -->
+                    <div class="pricing-card">
+                        <h3>VIP</h3>
+                        <p class="price">5 000 ₽</p>
+                        <ul>
+                            <li>🎁 Эксклюзивный VIP-сувенир</li>
+                            <li>📚 Персональная экскурсия</li>
+                            <li>📸 VIP фото-зоны + фотосессия</li>
+                            <li>🍷 Welcome drink и подарочный набор</li>
+                            <li>💎 Доступ в закрытую VIP-зону</li>
+                        </ul>
+                        <a href="#registration" class="btn">Стать VIP-гостем</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer" id="contacts">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="logo">🎨 Pin-Up Art</a>
+                <nav class="footer-nav">
+                    <a  href="#about">О выставке</a>
+                    <a  href="#pricing">Цены</a>
+                    <a  href="#features">Особенности</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contacts">Контакты</a>
+                    <a  href="#highlights">Основные моменты</a>
+                    <a  href="#faq">FAQ</a>
+                    <a  href="#registration">Контакты</a>
+                </nav>
+            </div>
+
+            <div class="footer-contacts">
+                <h3>Контакты</h3>
+                <p><strong>📍 Адрес:</strong> Музей Pin-Up Арта, Алматы</p>
+                <p><strong>📞 Телефон:</strong> <a href="tel:+772700204525">+7 (727) 020-45-25</a></p>
+                <p><strong>📧 Email:</strong> <a href="mailto:info@pinupart-almaty.com">info@pinupart-almaty.com</a>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"/>
+                    </a>
+                    <a href="https://t.me/+772700204525" target="_blank" title="Telegram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook"/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <a href="cookiePolicy.html">Cookie Policy</a>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <p>© 2025 Pin-Up Art Exhibition. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="cookie-consent" id="cookieConsent">
+        <p>🍪 Мы используем cookie для улучшения работы сайта. Продолжая пользоваться сайтом, вы соглашаетесь с нашей <a
+                href="privacyPolicy.html">политикой конфиденциальности</a>.</p>
+        <button id="cookieAccept">Согласен</button>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+.site-footer {
+    background: #333;
+    color: #fff;
+    padding: 60px 20px 30px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #e63946;
+}
+
+.footer-contacts h3 {
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+.footer-contacts p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-contacts a {
+    color: #e63946;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contacts a:hover {
+    color: #d62839;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #e63946;
+}
+
+.footer-bottom p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+}
