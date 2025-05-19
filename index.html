@@ -76,10 +76,11 @@
             <span class="close">&times;</span>
             <h3>Заказать звонок</h3>
             <p>Оставьте свои данные, и мы свяжемся с вами в ближайшее время!</p>
-            <form class="callback-form">
-                <input type="text" placeholder="Ваше имя" required/>
-                <input type="tel" placeholder="Ваш телефон" required/>
+            <form class="callback-form" id="callbackForm">
+                <input type="text" name="name" id="callbackName" placeholder="Ваше имя" required />
+                <input type="tel" name="phone" id="callbackPhone" placeholder="Ваш телефон" required />
                 <button type="submit">Отправить</button>
+                <p id="callbackError" style="color: red; margin-top: 10px;"></p>
             </form>
         </div>
     </div>
@@ -87,15 +88,6 @@
 
     <main class="main">
 
-
-<!--        <section id="hero" class="hero">-->
-<!--            <div class="hero-content">-->
-<!--                <h1>Выставка pin up Арта в Алматы</h1>-->
-<!--                <p>Откройте для себя мир ярких и соблазнительных образов!</p>-->
-<!--                <span>Музей pin up Арта с гордостью представляет уникальную выставку, посвящённую культовому направлению в искусстве — pin up Арт. С 15 июня в Алматы стартует совершенно новая выставка, где зрители смогут увидеть работы, вдохновленные золотыми годами американского и европейского искусства 1940-1960-х годов, когда каждая иллюстрация, каждый образ был пронизан духом элегантности и игривой сексуальности.</span>-->
-<!--                <a href="#registration" class="btn">Предрегистрация</a>-->
-<!--            </div>-->
-<!--        </section>-->
 
         <section id="hero" class="hero">
             <video autoplay muted loop playsinline class="hero-video">
@@ -340,17 +332,17 @@
                     <p><strong>📧 Email:</strong> <a href="mailto:info@pinupart-almaty.com">info@pinupart-almaty.com</a>
                     </p>
 
-                    <div class="socials">
-                        <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"/>
-                        </a>
-                        <a href="https://t.me/+772700204525" target="_blank" title="Telegram">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook"/>
-                        </a>
-                    </div>
+<!--                    <div class="socials">-->
+<!--                        <a href="https://www.instagram.com/" target="_blank" title="Instagram">-->
+<!--                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"/>-->
+<!--                        </a>-->
+<!--                        <a href="https://t.me/+772700204525" target="_blank" title="Telegram">-->
+<!--                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>-->
+<!--                        </a>-->
+<!--                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">-->
+<!--                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook"/>-->
+<!--                        </a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </section>
@@ -360,15 +352,14 @@
                 <h2>Выберите подходящий билет</h2>
                 <p class="pricing-intro">
                     Посещение выставки доступно для всех желающих!
-                    Но для ценителей искусства и тех, кто хочет получить больше — мы подготовили специальные пакеты с
-                    бонусами.
+                    Но для ценителей искусства и тех, кто хочет получить больше — мы подготовили специальные пакеты с бонусами.
                 </p>
 
                 <div class="pricing-cards">
                     <!-- Бесплатный пакет -->
                     <div class="pricing-card">
                         <h3>Бесплатный</h3>
-                        <p class="price">0 ₽</p>
+                        <p class="price">0 ₸</p>
                         <ul>
                             <li>🎟️ Свободный вход</li>
                             <li>📸 Фото-зоны</li>
@@ -381,7 +372,7 @@
                     <!-- Стандартный пакет -->
                     <div class="pricing-card featured">
                         <h3>Стандарт</h3>
-                        <p class="price">1 500 ₽</p>
+                        <p class="price">1 500 ₸</p>
                         <ul>
                             <li>🎁 Подарочный сувенир</li>
                             <li>📚 Участие в лекциях и мастер-классах</li>
@@ -394,7 +385,7 @@
                     <!-- VIP пакет -->
                     <div class="pricing-card">
                         <h3>VIP</h3>
-                        <p class="price">5 000 ₽</p>
+                        <p class="price">5 000 ₸</p>
                         <ul>
                             <li>🎁 Эксклюзивный VIP-сувенир</li>
                             <li>📚 Персональная экскурсия</li>
@@ -433,17 +424,17 @@
                 <p><strong>📞 Телефон:</strong> <a href="tel:+772700204525">+7 (727) 020-45-25</a></p>
                 <p><strong>📧 Email:</strong> <a href="mailto:info@pinupart-almaty.com">info@pinupart-almaty.com</a>
 
-                <div class="socials">
-                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"/>
-                    </a>
-                    <a href="https://t.me/+772700204525" target="_blank" title="Telegram">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook"/>
-                    </a>
-                </div>
+<!--                <div class="socials">-->
+<!--                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">-->
+<!--                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"/>-->
+<!--                    </a>-->
+<!--                    <a href="https://t.me/+772700204525" target="_blank" title="Telegram">-->
+<!--                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>-->
+<!--                    </a>-->
+<!--                    <a href="https://www.facebook.com/" target="_blank" title="Facebook">-->
+<!--                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook"/>-->
+<!--                    </a>-->
+<!--                </div>-->
             </div>
 
             <div class="footer-bottom">

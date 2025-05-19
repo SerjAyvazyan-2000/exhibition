@@ -190,7 +190,6 @@ if(form){
         const email = document.getElementById('email').value.trim();
         const phone = document.getElementById('phone').value.trim();
 
-        // Простая валидация
         if (name === '' || email === '' || phone === '') {
             errorMsg.textContent = 'Пожалуйста, заполните все обязательные поля.';
             return;
@@ -211,6 +210,36 @@ if(form){
         }
 
         // Если всё ок — переходим на страницу "Спасибо"
+        window.location.href = 'thank-you.html';
+    });
+
+}
+
+const callbackForm = document.getElementById('callbackForm');
+
+if(callbackForm){
+    const callbackError = document.getElementById('callbackError');
+
+    callbackForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('callbackName').value.trim();
+        const phone = document.getElementById('callbackPhone').value.trim();
+
+        // Валидация полей
+        if (name === '' || phone === '') {
+            callbackError.textContent = 'Пожалуйста, заполните все поля.';
+            return;
+        }
+
+        // Проверка телефона (разрешаем +, -, пробелы и цифры)
+        const phonePattern = /^[0-9\+\-\(\)\s]+$/;
+        if (!phonePattern.test(phone)) {
+            callbackError.textContent = 'Введите корректный номер телефона.';
+            return;
+        }
+
+        // Всё ок — переходим на страницу "Спасибо"
         window.location.href = 'thank-you.html';
     });
 
