@@ -177,3 +177,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
    });
 
+
+const form = document.getElementById('regForm');
+if(form){
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Получаем значения полей
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+
+        // Простая валидация
+        if (name === '' || email === '' || phone === '') {
+            errorMsg.textContent = 'Пожалуйста, заполните все обязательные поля.';
+            return;
+        }
+
+        // Проверяем корректность email
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/i;
+        if (!emailPattern.test(email)) {
+            errorMsg.textContent = 'Пожалуйста, введите корректный email.';
+            return;
+        }
+
+        // Проверяем корректность телефона (можно доработать под формат Казахстана)
+        const phonePattern = /^[0-9\+\-\(\)\s]+$/;
+        if (!phonePattern.test(phone)) {
+            errorMsg.textContent = 'Пожалуйста, введите корректный телефон.';
+            return;
+        }
+
+        // Если всё ок — переходим на страницу "Спасибо"
+        window.location.href = 'thank-you.html';
+    });
+
+}
+
